@@ -2,6 +2,8 @@ package com.sbrowne
 
 class Doctor {
 
-    static constraints = {
-    }
+
+	static constraints = {
+
+	}
 }

@@ -2,5 +2,5 @@ package com.sbrowne
 
 class NurseController {
 
-    def index() { }
+    def scaffold = Nurse
 }

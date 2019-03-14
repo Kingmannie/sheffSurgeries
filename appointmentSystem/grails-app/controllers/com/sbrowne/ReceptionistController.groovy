@@ -2,5 +2,5 @@ package com.sbrowne
 
 class ReceptionistController {
 
-    def index() { }
+    def scaffold = Receptionist
 }
