@@ -8,6 +8,15 @@ class Prescription {
 	double totalCost
 	Date dateIssued
 	Boolean patientPaying
+	
+	Doctor doctor
+	Patient patient
+
+	String toString(){
+
+	return medicine	
+		
+	}
 
 	static constraints = {
 

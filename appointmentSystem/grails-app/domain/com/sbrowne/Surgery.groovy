@@ -10,7 +10,16 @@ class Surgery {
 	int numberOfDoctors
 	String description
 	String openingTime
-	
+
+	static hasMany=[doctors:Doctor, receptionists:Receptionist, appointments:Appointment, patients:Patient, nurses:Nurse]
+
+
+
+	String toString(){
+
+	return name	
+		
+	}
 
 	static constraints = {
 	
