@@ -9,7 +9,7 @@ class Nurse {
 	String nursePhone
 
 	Surgery surgery
-	static belongsTo=[Surgery]
+	static belongsTo=[Doctor]
 
 	static hasMany=[doctors:Doctor]
 

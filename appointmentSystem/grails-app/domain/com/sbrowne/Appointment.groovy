@@ -6,9 +6,12 @@ class Appointment {
 	String appTime
 	int appDuration
 	String roomNumber
-	Patient patients
+	Patient patient
+	Doctor doctor
 
-	static hasMany=[surgeries:Surgery, doctors:Doctor]
+	static belongsTo=[Surgery]
+
+	static hasMany=[surgeries:Surgery]
 
 	String toString(){
 
@@ -22,7 +25,7 @@ class Appointment {
 	appTime nullable:false, blank:false, maxSize:7;
 	appDuration nullable:false, blank:false, max:60;
 	roomNumber nullable:false, blank:false, maxSize:15;
-	patients nullable:true, blank:true;
+	patient nullable:true, blank:true;
 	
 	}
 }

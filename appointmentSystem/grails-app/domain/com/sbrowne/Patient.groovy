@@ -11,6 +11,8 @@ class Patient {
 	String patientPhone
 	Appointment appointment
 
+	static belongsTo=[Doctor]
+
 	static hasMany=[surgeries:Surgery, doctors:Doctor, prescriptions:Prescription]
 
 	String toString(){

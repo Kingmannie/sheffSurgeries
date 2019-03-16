@@ -8,8 +8,9 @@ class Prescription {
 	double totalCost
 	Date dateIssued
 	Boolean patientPaying
-	
-	Doctor doctor
+
+	static belongsTo=[Doctor]
+
 	Patient patient
 
 	String toString(){

@@ -11,6 +11,8 @@ class Surgery {
 	String description
 	String openingTime
 
+	static belongsTo=[Patient]
+
 	static hasMany=[doctors:Doctor, receptionists:Receptionist, appointments:Appointment, patients:Patient, nurses:Nurse]
 
 
