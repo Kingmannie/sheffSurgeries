@@ -8,6 +8,8 @@ class Prescription {
 	double totalCost
 	Date dateIssued
 	Boolean patientPaying
+	int daysOfSupply
+	Doctor doctor
 
 	static belongsTo=[Doctor]
 
@@ -27,6 +29,7 @@ class Prescription {
 	totalCost nullable:false, blank:false, scale:2;
 	dateIssued nullable:false, blank:false;
 	patientPaying nullable:false, blank:false;
+	daysOfSupply nullable:false, blank:false, max:1000;
 
 	}
 }

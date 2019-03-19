@@ -4,7 +4,7 @@ class BootStrap {
 
 	def init = { servletContext ->
 
-	def objSurOne = new Surgery(
+	/*def objSurOne = new Surgery(
 	name:'Sunny Pines',
 	address:'Sunny Pines, 100 Pine Hill, Gottfried, London',
 	postcode:'L1 7TY',
@@ -351,7 +351,7 @@ class BootStrap {
 	objDocFour.addToPrescriptions(objPresSeven)
 	objDocFour.addToPrescriptions(objPresFour)
 	objDocFour.addToPrescriptions(objPresEight)
-	objDocFour.addToPrescriptions(objPresTwo)
+	objDocFour.addToPrescriptions(objPresTwo)*/
 	
 
 	}

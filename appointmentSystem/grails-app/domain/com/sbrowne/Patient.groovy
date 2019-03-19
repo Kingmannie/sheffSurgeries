@@ -9,6 +9,7 @@ class Patient {
 	String patientID
 	Date dateRegistered
 	String patientPhone
+	
 	Appointment appointment
 
 	static belongsTo=[Doctor]
