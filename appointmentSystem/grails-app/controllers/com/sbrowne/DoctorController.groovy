@@ -4,6 +4,47 @@ class DoctorController {
 
     def scaffold = Doctor
 
+    def search(){
+	
+	} 
+
+   	def medresults(String medname){
+
+   		def prescriptions=Prescription.where{
+
+   			medicine=~medname
+   		
+   		}.list()
+
+   		return [prescriptions:prescriptions,
+
+   			term:params.prescription,
+
+   			totalPrescriptions: Prescription.count()]
+
+	}
+
+	def dosresults(){
+
+   		def prescriptions=Prescription.findAllByDaysOfSupply(params.dos).asList()
+
+   		return [prescriptions:prescriptions,
+
+   			totalPrescriptions: Prescription.count()]
+
+	}
+
+	def totresults(){
+
+		def prescriptions=Prescription.findAllByTotalCost(params.totcost).asList()
+
+   		return [prescriptions:prescriptions,
+
+   			totalPrescriptions: Prescription.count()]
+
+	}
+
+
     def login(){
 
 	

@@ -66,14 +66,11 @@
               </tbody>
             </table>
         </div>
-        <hr>
-        <div class="row text-center">
-            <h4>Prescription Search</h4>
-        </div>
-        <hr>
-
-
-
+    <hr>
+    <div class="row text-center">
+        <a style="font-size:24px;" href="/doctor/search">Prescription Search Click Here</a>
+    </div>
+    <hr>
 
     </div>
 </div>
