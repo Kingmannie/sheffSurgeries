@@ -12,7 +12,7 @@
 	
 
     <div>
-      <asset:image src="reception-banner.jpg" class="img-rounded col-lg-12" alt="Homepage Image"/>
+      <asset:image src="reception-banner.jpg" class="img-rounded col-lg-12" alt="Receptionist Image"/>
   </div> 
   
   <br/>

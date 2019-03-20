@@ -13,7 +13,7 @@
 
 
   <div>
-      <asset:image src="doctor-banner.jpg" class="img-rounded col-lg-12 mt-3" alt="Homepage Image"/>
+      <asset:image src="doctor-banner.jpg" class="img-rounded col-lg-12 mt-3" alt="Doctor Image"/>
   </div> 
   
   <br/>

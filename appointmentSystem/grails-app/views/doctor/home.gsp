@@ -9,18 +9,73 @@
 
 <body class="container" role="main">
 
+    <hr>
+    
     <div>
-        <asset:image src="doctor-banner.jpg" class="img-rounded col-lg-12 mt-3" alt="Homepage Image"/>
+        <asset:image src="doctor-banner.jpg" class="img-rounded col-lg-12" alt="Doctor Image"/>
     </div> 
 
-    
     <div>
         <hr>
         <h1 class="text-center">Doctor's Homepage</h1>
-        <g:drloginToggle/>
         <hr>
+        <g:drloginToggle/>
+        <br>
     </div>
 
+    <div class="container">
+        <hr>
+        <div class="row">
+            <h4 class="text-center">Doctors Admin Below</h4>
+            <hr>
+        </div>
+
+        <div class="row">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Create Prescriptions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td><button type="button" class="btn btn-link">
+                    <g:link controller="prescription" action="create">Create Prescription</g:link>
+                    </button></td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td><button type="button" class="btn btn-link">
+                    <g:link controller="prescription" action="index">Display Prescriptions</g:link>
+                    </button></td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td><button type="button" class="btn btn-link">
+                    <g:link controller="patient" action="index">Display Patients</g:link>
+                    </button></td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td><button type="button" class="btn btn-link">
+                    <g:link controller="appointment" action="index">Display Appointments</g:link>
+                    </button></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+        <hr>
+        <div class="row text-center">
+            <h4>Prescription Search</h4>
+        </div>
+        <hr>
+
+
+
+
+    </div>
 </div>
 
 </body>
