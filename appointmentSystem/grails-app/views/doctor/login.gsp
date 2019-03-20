@@ -8,11 +8,16 @@
 	<asset:link rel="icon" href="favicon.ico" type="image/x-ico" />
   </head>
 
-  <body>
+  <body role="main">
 	
+
+
+  <div>
+      <asset:image src="doctor-banner.jpg" class="img-rounded col-lg-12 mt-3" alt="Homepage Image"/>
+  </div> 
+  
   <br/>
   <hr>
-
 	<g:if test="${flash.message}">
 	<div class="message">${flash.message}</div>
 	</g:if>

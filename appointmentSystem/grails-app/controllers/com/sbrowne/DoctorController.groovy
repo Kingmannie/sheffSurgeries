@@ -31,6 +31,22 @@ class DoctorController {
 
 	}
 
+	def results(String name){
+
+		def doctors=Doctor.where{
+
+			fullName=~name
+		}.list()
+
+	return [doctors:doctors,
+
+			term:params.name,
+
+			totalDoctors: Doctor.count()]
+
+
+	}
+
 	def logout = {
 
 	session.user = null

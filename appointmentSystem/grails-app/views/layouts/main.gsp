@@ -15,47 +15,7 @@
     <g:layoutHead/>
 </head>
 
-<body class="container" style="background-color: aliceblue;">
-
-    <div>
-        <asset:image src="homepage-banner.jpg" class="img-rounded col-lg-12 mt-3" alt="Homepage Image"/>
-    </div>
-
-    <div>
-        <hr>
-        <h1 class="text-center">Welcome to Sheffield Teaching Hospitals</h1>
-        <hr>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-1">
-        </div>
-        <div class="border border-dark mt-1 col-lg-4">
-                <h2>Doctors Login</h2>
-            <hr>
-            <div class="panel-body">
-                <h5>Doctors Login Here:</h5><g:drloginToggle/>
-                <br/>
-                <hr>
-            </div>
-        </div>
-
-        <div class="col-lg-2">
-        </div>
-
-        <div class="border border-dark mt-1 col-lg-4">
-                <h2>Receptionists Login</h2>
-            <hr>
-            <div class="panel-body">
-                <h5>Receptionists Login Here:</h5><g:rcloginToggle/>
-                <br/>
-                <hr>
-            </div>
-        </div>
-        <div class="col-lg-1">
-        </div>
-
-    </div>
+<body>
 
 <g:layoutBody/>
 
