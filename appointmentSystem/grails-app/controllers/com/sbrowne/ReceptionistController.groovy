@@ -4,6 +4,28 @@ class ReceptionistController {
 
     def scaffold = Receptionist
 
+    def search(){
+
+	
+	} 
+
+   	def results(String name){
+
+   		def patients=Patient.where{
+
+   			(patientName=~name) || (patientID=~name) || (patientResidence=~name)
+   		
+   		}.list()
+
+   		return [patients:patients,
+
+   			term:params.patient,
+
+   			totalPatients: Patient.count()]
+
+	}
+
+
     def login(){
 
 	
