@@ -73,7 +73,22 @@
     <hr>
 
     </div>
+
+    <div>
+        <hr>
+        <h1 class="text-center">Tag Experiment (Emergency Response)</h1>
+        <hr>
+        <g:drpager/>
+        <br>
+    </div>
 </div>
+
+<script>
+    function thanks(){
+        alert("Thank you for your response.!");
+    }
+
+</script>
 
 </body>
 </html>

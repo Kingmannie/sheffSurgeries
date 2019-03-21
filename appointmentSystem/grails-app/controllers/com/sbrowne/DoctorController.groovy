@@ -70,6 +70,24 @@ class DoctorController {
 
 		}
 
+	
+	//declare static array with emergency situations
+	def emergencylist = ["Broken Bone","Heart Attack","Unconscious"]
+
+	//store size of emergency array
+	def emergencylistsize =  emergencylist.size()
+
+	//random variable
+	def r = new Random()
+
+	//get one item from emergency array & store in session data for use in tag
+	1.times {
+
+		session.data = emergencylist.get(r.nextInt(emergencylistsize))
+
+	}
+
+
 	}
 
 	def logout = {
